@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Muzyczka</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <audio id="audio">
+      <source src="media/1.mp3" type="audio/mp3">
+    </audio>
+    <div class="audioplayer">
+      <div class="info">
+        <h2>Patryk</h2>
+        <h3>próbka bitu</h3>
+        <div class="time">
+          <p id="currenttime">00:00</p>
+          <p id="timeleft">00:00</p>
+        </div>
+        <div class="progressbar_slide">
+          <div class="progressbar_range">
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="controls_plays">
+          <i id="previous" class="fas fa-backward navigate"></i>
+
+          <i id="play" class="fas fa-play plays"></i>
+
+          <i id="pause" class="fas fa-pause plays"></i>
+
+
+          <i id="next" class="fas fa-forward navigate"></i>
+        </div>
+        <div class="controls_player">
+          <i id="volumeup" class="fas fa-volume-up vol"></i>
+          <i id="volumedown" class="fas fa-volume-off vol"></i>
+
+          <i id="playlist" class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="playlist">
+        <hr>
+        <ul>
+          <li>2.mp3</li>
+          <li>3.mp3</li>
+          <li>4.mp3</li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="sound.js"></script>
+  </body>
+</html>
